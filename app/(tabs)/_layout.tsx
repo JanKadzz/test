@@ -1,3 +1,4 @@
+// app/_layout.tsx
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
@@ -7,12 +8,7 @@ export default function Layout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: "#007AFF",
-        tabBarStyle: {
-          height: 60,
-          paddingBottom: 8,
-          paddingTop: 6,
-          backgroundColor: "#fff",
-        },
+        tabBarStyle: { height: 60, paddingBottom: 8, paddingTop: 6, backgroundColor: "#fff" },
       }}
     >
       <Tabs.Screen
@@ -25,11 +21,11 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="tasks"
         options={{
-          title: "Profil",
+          title: "Zadania",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-circle-outline" color={color} size={size} />
+            <Ionicons name="checklist-outline" color={color} size={size} />
           ),
         }}
       />
