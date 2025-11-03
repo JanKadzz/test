@@ -65,6 +65,16 @@ export type PointTask = {
       answers: ["test"],
       reward: 5,
     },
+    {
+      id: "gd6",
+      title: "Park Oliwski",
+      coords: { latitude: 54.41025, longitude: 18.56195 },
+      radiusMeters: 70,
+      question: "Jakie zwierzęta można zobaczyć w stawie w Parku Oliwskim?",
+      answers: ["kaczki", "kaczka"],
+      reward: 10,
+    },
+
   ];
   
   export const normalize = (s: string) =>
